@@ -1,0 +1,74 @@
+   RECURSION
+
+it is a process in which function calls itself directly or indirectly
+int i = 1;
+while (i <= 5){
+cout << i;
+i++
+}                                                    OUTPUT 1,1,1,1,1 infinite
+
+CODE: print number using recursion
+#include<iostream>
+using namespace std;
+              parameter
+void printval(int num){                              OUTPUT 1,2,3,4,5
+
+if( num <= 5){
+cout << num << endl;
+         function call
+printval(num+1);
+}
+else{
+return;
+}
+}
+int main(){
+printval(1); function call
+}
+
+
+
+CODE: find GCD
+#include <iostream>
+using namespace std;                                            OUTPUI: 6
+
+int GCD(int a,int b){
+    if (b==0){
+        return a;
+    }
+    else{
+        return GCD (b,a%b);
+    }
+} 
+    
+    int main (){
+        int ans = GCD(12,18);
+        cout << ans << endl;
+    }
+
+
+CODE: factorial of number                                     OUTPUT: enter any number:5
+
+#include <iostream>
+using namespace std;
+
+int fact(int num){
+    if(num==1){
+        return 1;
+    
+    }
+    else{
+        return num* fact(num-1);
+    }
+    }
+int main(){
+    int n;
+    cout<<"enter any number:";
+    cin>>n;
+    int ans = fact(n);
+    cout<<ans;
+}
+
+   
+
+
