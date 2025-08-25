@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+#include<vector>
+int main() {
+    
+    vector < int > arr = {3,5,10};
+    
+    arr.push_back (8);
+    arr.push_back (2);
+    arr.pop_back ();
+    
+    for(int val : arr) {
+        cout<<val<<" ";
+    }
+    cout<<endl;
+    cout<<arr.size()<<endl;
+}
+output
+3 5 10 8 
+4
+
+
+=== Code Execution Successful ===
